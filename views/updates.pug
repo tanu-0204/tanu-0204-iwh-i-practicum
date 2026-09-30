@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Add Plant
+
+    form(action="/update-cobj" method="POST")
+      label Name
+      input(type="text" name="name" required)
+
+      br
+      br
+
+      label Species
+      input(type="text" name="species" required)
+
+      br
+      br
+
+      label Watering Frequency
+      input(type="text" name="watering_frequency" required)
+
+      br
+      br
+
+      button(type="submit") Add Plant
+
+    br
+
+    a(href="/") Return to the homepage

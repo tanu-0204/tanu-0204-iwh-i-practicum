@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Plant Records
+
+    table(border="1")
+      thead
+        tr
+          th Name
+          th Species
+          th Watering Frequency
+      tbody
+        each plant in data
+          tr
+            td= plant.properties.name
+            td= plant.properties.species
+            td= plant.properties.watering_frequency
+
+    br
+
+    a(href="/update-cobj") Add to this table
